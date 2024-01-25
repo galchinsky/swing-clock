@@ -1,0 +1,6 @@
+- `swing_clock.ino` - Arduino IDE code. See https://www.pjrc.com/teensy/td_download.html for installation instructions
+- `pc_test.cpp` - mocking library to test the algorithms on PC. To compile: `g++ -O2 pc_test.cpp -I. -o pc_test` . At the moment the script outputs 2 columns of numbers, corresponding to CLOCK1 and CLOCK2 values for every millisecond
+- `txt_to_wav.py` - converts `a.txt` to a wav file `stereo_output.wav` with 1000 Hz sample rate. It can be used with pc_test `./pc_test > a.txt` [wait for some time] Ctrl-C `python txt_to_wav.py`
+- `monkey_drummer_a_hats_plus.MID` - an example of a groove pattern, from Groove Monkee Funk Hip-Hop RNB MIDI. Buy it here: https://groovemonkee.com/products/funk-hip-hop-rb-midi-drum-loops I edited the file to remove any kind of polyphony from the midi file
+- `monkey_midi.py` - converts monkey_drummer_a_hats_plus.MID to a pattern you can paste to the code. Read the script's comments to get how to prepare the file
+- `swing_clock_no_classes.ino` - older version of the code for educational purporses
